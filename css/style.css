@@ -3,7 +3,7 @@ body {
 }
 
 #bg-img {
-  background: url("../img/back.png") no-repeat center center fixed;
+  background: url("../img/back.jpg") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
