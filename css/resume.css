@@ -1,0 +1,62 @@
+p {
+  font-size: 10pt;
+}
+
+h4 {
+  font-size: 10.5pt;
+}
+
+h2 {
+  font-size: 13pt;
+}
+
+h4 + p,
+hr {
+  margin-top: -15px;
+}
+
+.canvas-container {
+  margin: 0 auto; /* for centering, feel free to use flexbox or some other method*/
+  box-sizing: border-box;
+  padding: 0.5in; /* controls margins */
+  width: 8.5in;
+  height: 11in;
+  background-color: white;
+  box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.font {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.content {
+  display: grid;
+  gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "main aside";
+}
+
+@media print {
+    html {
+      height: 11in;
+      width: 8.5in;
+      overflow: hidden;
+    }
+  
+    body {
+      margin: 0;
+    }
+  
+    .canvas-container {
+      width: 100%;
+      box-shadow: none;
+    }
+  }
+  
